@@ -18,7 +18,8 @@ section , .right ,.left, .social ,.social i {
 }
 
 section {
-    background-image: url(image/backgroundimge.jpeg);
+    /* background-image: url(image/backgroundimge.jpeg); */
+    background-color: gold;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
