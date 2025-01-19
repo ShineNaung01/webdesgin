@@ -1,0 +1,178 @@
+/* Mobile */
+@media (max-width:320px){
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav{
+        align-items: center;
+    }
+
+    .head-cta-btn{
+        width: 300px;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    .section-warp{
+        overflow: hidden;
+        height: auto;
+        width: 90%;
+        padding: 20px;
+        margin: 50px 15px;
+    }
+
+    .section{
+        height: auto;
+    }
+
+    .hero-content{
+        grid-template-columns: 1fr;
+    }
+
+    .main-text{
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+
+    .sub-text{
+        font-size: 1rem;
+    }
+
+    .hero-cta-btn{
+        margin-bottom: 25px;
+    }
+    .right{
+        margin-top: 50px;
+    }
+    
+    .section-btn{
+        margin-bottom: 100px;
+    }
+    
+    .project-grib{
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    
+    .card{
+        margin:10px  ;
+    }
+    
+    .section-title{
+        margin-top: 50px;
+    }
+    
+    .contact-grip{
+        grid-template-columns: 1fr;
+    
+    }
+    
+    .contact , .right img{
+        width: 100%;
+        margin: 100px 10px 50px;
+    }
+    
+    form button{
+        margin-bottom: 50px;
+    }
+    
+}
+
+
+@media (min-width: 425px) and (max-width:760px){
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .head-cta-btn{
+        width: 600px;
+        height: 60px;
+        border-radius: 30px;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    .section-warp{
+        overflow: visible;
+        margin: 50px auto;
+        height: auto;
+        width: 80%;
+        height: 180vh;
+        padding: 50px;
+    }
+
+    #hero{
+        margin-top: 80vh;
+    }
+
+    .about{
+        margin-top: 80vh;
+    }
+
+    .project{
+        margin-top: 90vh;
+    }
+
+    .contact{
+        margin-top:80vh;
+    }
+
+    .footer{
+        margin-top: 80vh;
+    }
+
+    .section{
+        height: auto;
+    }
+
+    .hero-content{
+        grid-template-columns: 1fr;
+    }
+
+    .main-text{
+        font-size: 3rem;
+        margin-top: 60px;
+    }
+
+    .sub-text{
+        font-size: 1rem;
+    }
+
+    .header-cta-btn{
+        margin-bottom: 25px;
+    }
+
+    .section-btn{
+        margin-bottom: ;
+    }
+
+    .project-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card{
+        margin: 0;
+    }
+
+    .contact-grip{
+        grid-template-columns: 1fr;
+    }
+
+    .contact .right img{
+        width: 90%;
+        margin: 100px 10px 80px;
+    }
+
+    form button{
+        margin-bottom: 50px;
+    }
+}

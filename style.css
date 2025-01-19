@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-family: "Roboto", serif;
+    box-sizing: border-box;
+
+}
+
+/* Main Header */
+section , .right ,.left, .social ,.social i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-image: url(image/backgroundimge.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.section-warp {
+    background-color: aqua;
+    height: 80vh;
+    width: 95%;
+    border: 1px solid black;
+    box-shadow: inset 0 0 5px rebeccapurple;
+    border-radius: 30px;
+    backdrop-filter: blur(12px);
+    padding: 50px 100px;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+}
+
+.head-logo{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.head-logo span {
+    color: burlywood;
+}
+
+.nav-items {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+
+}
+
+nav, .head-cta{
+    z-index: 10000;
+}
+
+.nav-items::before{
+    background-color: rgb(183, 232, 6);
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    height: 1px;
+    width: 100%;
+    box-shadow: 0 0 3px grey;
+    transform: translate(-50%)scale(0);
+
+}
+
+.nav-items:hover::before{
+    transform: translate(-50%) scale(1);
+}
+
+.nav-items:hover{
+    text-shadow: 0 0 10px red;
+}
+
+
+.header-cta-btn{
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px 40px;
+    border-radius: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header-cta-btn:hover{
+    background-color: blueviolet;
+    border-color: aqua;
+    box-shadow: 0 0 50px gold;
+
+}
+
+/* center left */
+.hero-content{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left{
+    flex-direction: column;
+    align-items: center;
+    height: 45vh;
+    margin-top: 70px;
+
+}
+
+.adj {
+    width: 80%;
+    height: 90%;
+    text-align: center;
+}
+
+.main-text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.main-tex span {
+    color: gold;
+}
+
+.sub-text{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: bold;
+    color: blue;
+    font-weight: bold;
+
+}
+.hero-cta-btn{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: Bold;
+    padding: 15px 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 25px;
+    margin-left: 20px;
+
+
+}
+
+.btn2{
+    background-color: rgb(240, 240, 255);
+}
+
+.btn1{
+    background-color: rgb(223, 28, 168);
+}
+
+/* .hero-cta-btn:hover{
+    box-shadow:  0 0 30px gold;
+} */
+
+.btn2:hover{
+    box-shadow: 0 0 80px gold;
+}
+
+.btn1:hover {
+    box-shadow: 0 0 80px gold;
+}
+
+/* Center right */
+
+.right img {
+    width: 15%;
+    height: 300;
+    filter: drop-shadow(0 0 20px orange);
+    animation:30s treescale linear infinite;
+    pointer-events: none;
+
+}
+
+/* footer */
+
+.social {
+    height: 80px;
+    width: 80px;
+    font-size: 1rem;
+    border: 1px solid orange;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.social i:hover {
+    border-color: violet;
+    box-shadow: 0 0 24px orange;
+    text-shadow: 0 0 24px gray(0, 204, 255);
+    transform: rotate(360deg);
+    color: aqua;
+}
+
+/* About */
+.section-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-title span {
+    color: gold;
+
+}
+
+.about p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin: 50px;
+
+}
+/* .about-img {
+    width: 50%;
+    height: 50%;
+
+} */
+
+.section-btn {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 24px;
+    letter-spacing: 2px;
+    color: gold;
+    background-color: aqua;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.section-btn:hover {
+    background-color: red;
+    box-shadow: 0 0 50px gold ;
+
+}
+
+.about-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Project */
+.project-grip {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.project img {
+    width: 100%;
+    border: 10px;
+}
+
+.card {
+    background-color: goldenrod;
+    border: 2px black;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin: 50px 0 20 px;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: aquamarine;
+    box-shadow: 0 0 50px rgba(255, 60, 0, 0.608);
+}
+
+.project .section-btn {
+    width: 100%;
+    margin-top: 1px;
+}
+
+/* contact */
+
+
+.contact-grip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact .right img {
+    width: 80%;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+.contact p{
+    font-size: 1.2rem;
+    margin-bottom:50px ;
+}
+
+form {
+    display: flex;
+    flex-direction:column ;
+    gap: 20px;
+    width: 100%;
+}
+
+input , textarea {
+    background-color: transparent;
+    color: gold;
+    font-size: 1rem;
+    padding: 20px;
+    border-radius: 1px solid azure;
+    border-radius: 15px;
+}
+
+input ::placeholder , textarea::placeholder {
+    color: aquamarine;
+}
+
+textarea {
+    height: 20vh;
+}
+
+form button{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #ff00e1;
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover{
+    background-color: gold;
+    box-shadow: 0 0 10px #ff00e1;
+}
+
+/* footer */
+
+.footer{
+    height: auto;
+    background-color: none;
+    border-color: white;
+}
+
+.footer .section-warp{
+    height: auto;
+    margin: 50px 0;
+}
+
+.copyright {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
